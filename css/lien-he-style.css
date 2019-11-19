@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.header{
+  background-image: url('../img/Lien-he/lienheback.png');
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+#contact{margin-top: 50px;}
+
+.cus-info{background-color: transparent; border: 1px solid rgba(0,0,0,0.30); margin-bottom: 20px; width: 100%; padding: 10px;}
+
+.submit{width: 170px; height: 45px; color: rgba(255,255,255,1.00); background-color: rgba(0,0,0,1.00); padding: 10px;}
+
+

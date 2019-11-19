@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.header{
+  background-image: url('../img/Tin-tuc/preview-71322-39bArOLq3P_0001.png');
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+.body-text{text-align: center; margin-top: 50px;}
+
+.news{width: 100%; height: auto; background-color: rgba(255,255,255,1.00); border: 1px solid rgba(0,0,0,0.10); 
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.30); padding: 15px; margin-top: 50px; transition: 0.3s;}
+
+.news:hover{transform: scale(1.05);}
+
+.news img{margin-bottom:20px; width: 100%;}

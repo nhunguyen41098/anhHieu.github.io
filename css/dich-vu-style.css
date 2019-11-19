@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+.header{
+  background-image: url('../img/Dich-vu/1491211307customer support services.png');
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+.body-text{text-align: center; margin-top: 50px;}
+
+.dv1{width:100%; height: auto; background-color: rgba(255,255,255,1.00); box-shadow: 3px 3px 5px rgba(0,0,0,0.30);
+	padding: 20px; margin-top: 80px; transition: 0.3s}
+
+.dv1 img{margin-bottom: 20px;}
+
+.dv1:hover{ transform: scale(1.05);}
+	

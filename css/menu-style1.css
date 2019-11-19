@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.menu-btn{
+	position: absolute;
+	right: 50px;
+	top: 30px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+}
+
+.hamburger{
+	width: 25px;
+	height: 4px;
+	background-color: rgba(0,0,0,1.00);
+	border-radius: 10px;
+	transition: all 0.3s ease-in-out; 
+}
+
+
+.hamburger::before, .hamburger::after{
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 4px;
+	background-color:rgba(0,0,0,1.00);
+	border-radius: 10px;
+	transition: all 0.3s ease-in-out;
+}
+
+.hamburger::before{transform: translateY(-10px);}
+
+.hamburger::after{transform: translateY(10px);}
+
+
+.menu-btn.open .hamburger{
+	transform: translateX(0px);
+	background: transparent;
+	box-shadow: none;
+}
+
+.menu-btn.open .hamburger::before{transform: rotate(45deg);}
+
+.menu-btn.open .hamburger::after{transform: rotate(-45deg);}
+
+
+
+
+
+
+/* ==================================== */
+/*		  	  Navigaton Menu		
+/* ==================================== */
+
+.menu-wrap {
+	background-color: #6968AB;
+	position: fixed;
+	top: 0; 
+	right: 0px;
+	height: 100%;
+	width: 280px;
+	margin-left: -280px;
+	font-size: 1em;
+	font-weight: 700;
+	overflow: auto;
+	transition: .25s;
+	z-index: 10;
+}
+.menu-show {
+	margin-right: 20px;
+	box-shadow: -5px 0px 15px #B9ADAD;
+}
+
+.menu-sidebar {
+	margin: 75px 0 80px 10px;
+	position: relative;
+	top: 70px;
+}
+.menu-sidebar li {
+	padding: 18px 22px 0;
+}
+.menu-sidebar li > a {
+	color: #f3f3f3;
+	font-size: 1.18em;
+	position: relative;
+}
+.menu-sidebar li > a::after {
+	content: "";
+	display: block;
+	height: 0.15em;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	left: 50%;
+	transform: translate(-50%);
+	background-image: linear-gradient(to right, transparent 50.3%, #FFFA3B 50.3%);
+	transition: background-position .2s .1s ease-out;
+	background-size: 200% auto;
+}
+.menu-sidebar li > a:hover::after {
+	background-position: -100% 0;
+}
+.menu-sidebar .menu-item-has-children {
+	position: relative;
+}
+.menu-sidebar .menu-item-has-children .sub-menu {
+	display: none;
+}
+.sidebar-menu-arrow::after {
+	content: "\f107";
+	font-family: 'FontAwesome';
+	padding: 10px;
+	color: #FFFA3B;
+	position: relative;
+}
+.sidebar-menu-arrow:hover::after {
+	cursor: pointer;
+	color: #fff;
+}
+.sidebar-menu-arrow:active::after {
+	top: 2px;
+}
+
+
+
+
+

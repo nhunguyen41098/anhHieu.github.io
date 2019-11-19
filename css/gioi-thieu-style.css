@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+.header{
+  background-image: url('../img/Gioi-thieu/Business-Free-from-Pixabay-creative-commons-1-600x378 2.png');
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+.body-text{text-align: center; margin-top: 50px;}
+
+.shape-body1{
+	width: 90%; height: 200px; background-color: rgba(255,255,255,1.00); 
+	position:relative; margin-top: -50px; box-shadow: 5px 5px 5px rgba(0,0,0,0.20);
+	padding: 40px;}
+@media only screen and (min-width:320px){.shape-body1{padding: 20px;}}
+
+
+.hinh-1 img{width: 100%; margin-top: 50px;}
+
+.body2-text{margin-top: 100px;}
+
+.body2-text h2{text-align: center;}
+
+.body3-img{margin-top: 50px;}
+
+.body3-img img{width: 100%;}
+
+.body3-img p{text-align: center;}
+
+@media only screen and (min-width:576px) and (max-width:767px){#dacbiet img{width:50%;}}

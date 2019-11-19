@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<link rel="stylesheet" href="../css/menu-style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.0.0-beta1.min.js"></script>
+	<script src="../css/menuscript.js"></script>
+</head>
+
+<body>
+		<div class="header">
+		<div class="menu-btn"><div class="hamburger"></div></div>
+		<div class="menu-wrap">
+			<div class="menu-sidebar">
+				<ul class="menu">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Blog</a></li>
+					<li class="menu-item-has-children"><a href="#">Click The Arrow</a>
+						<span class="sidebar-menu-arrow"></span>
+						<ul class="sub-menu">
+							<li><a href="#">Alignment</a></li>
+							<li><a href="#">Markup</a></li>
+							<li><a href="#">Comments</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Courses</a></li>
+					<li><a href="#">Get In Touch</a></li>
+				</ul>			
+			</div>
+		</div>
+		</div>
+	
+<script>
+	const menuBtn = document.querySelector('.menu-btn');
+	let menuOpen = false;
+	menuBtn.addEventListener('click',() => {
+		if(!menuOpen){
+			menuBtn.classList.add('open');
+			menuOpen = true;
+		} else {
+			menuBtn.classList.remove('open');
+			menuOpen = false;
+		}
+	});
+</script>	
+</body>
+</html>

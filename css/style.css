@@ -1,0 +1,81 @@
+.body3-img{margin-top: 50px;}
+
+.body3-img p{text-align: center;}.body3-img{margin-top: 50px;}
+.body3-img{margin-top: 50px;}
+.body3-img{margin-top: 50px;}
+@charset "utf-8";
+/* CSS Document */
+
+.header{
+  background-image: url('../img/Gioi-thieu/Business-Free-from-Pixabay-creative-commons-1-600x378 2.png');
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+@media (min-width: 1200px){
+.container {
+    max-width: 1120px;
+	}
+}
+
+
+.logo{padding-top: 20px;}
+
+.nav{padding-top: 20px;}
+.nav-item{margin-right: 20px;}
+.nav-item a{color: rgba(255,255,255,1.00); font-size: 20px; transition: 0.3s;}
+.nav-item a:hover{text-decoration: none; color: rgba(255,255,255,1.00); border-bottom: 1px solid rgba(255,255,255,1.00);}
+
+.social-link{color: rgba(255,255,255,1.00);padding: 5px; margin-left: 5px;}
+
+.header-text{text-align: center; color: rgba(255,255,255,1.00); padding: 230px 0;}
+
+.body-text{text-align: center; margin-top: 50px;}
+
+.line{width:100%; border-top: 2px solid rgba(205,205,205,1.00); margin-top: 30px;}
+
+#body1-1, #body1-2{margin-top: 80px;}
+
+#body2-1, #body2-2, #body2-3, #body3{margin-top: 80px;}
+
+.body4{
+  background-image: url(../img/services-bi-header-f2732x1536_2.png);
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+	
+.line-white{width:100%; border-top: 2px solid rgba(255,255,255,1.00); margin-top: 30px;}
+
+.info{margin-top: 30px;}
+
+.info input{width: 100%; height: 60px; padding: 10px;}
+
+.submit{width: 170px; height: 45px; margin-top: 20px; background-color: rgba(255,255,255,1.00); padding: 10px;}
+
+.date{float: left; width: 75px; height: 75px; background-color: rgba(61,61,61,1.00); margin-top: 20px;}
+
+.newstext{margin-top: 20px;}
+
+#body5{margin-top: 60px; margin-bottom: 100px;}
+
+.footer{background-color: rgba(53,53,53,1.00);}
+
+.social-page{height:35px; width: 35px; border-radius: 50px; border: 2px solid rgba(255,255,255,1.00); float: left; margin-right: 20px; margin-top: 10px;}
+
+.social-footer{color: rgba(255,255,255,1.00);}
+
+.sub input{width: 360px; height: 45px; float: left; padding: 10px;}
+
+.submit-mail{width: 85px; height: 45px; background-color:rgba(201,201,201,1.00); }
+
+.logo-footer img{margin-top: 50px;}
+
+.logo-footer p{margin-top: 20px; color: rgba(255,255,255,1.00);}
+
+.social h5{color:rgba(255,255,255,1.00);}
+
+.intro{margin-top: 50px; color:rgba(255,255,255,1.00);}
+

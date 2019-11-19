@@ -1,0 +1,267 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* Header */
+
+/* Phần logo */
+.logo{padding-top: 20px;}
+
+
+/* Phần menu */
+a {text-decoration: none;}
+
+ul{padding-left: 0px;}
+
+li {list-style: none;}
+
+
+/* Navigaton Menu */
+
+/* ==================================== */
+
+.menu{overflow: hidden; padding-left: 120px;}
+
+.menu li{float: left; text-align: center; padding: 20px 10px} 
+
+.menu li a{text-decoration: none; color: rgba(255,255,255,1.00); font-size: 20px;} 
+
+.menu-item-has-children{float: left; overflow: hidden;}
+
+.sub-menu{display: none; position: absolute; z-index: 1;}
+
+.sub-menu li{float: none; display: block; padding: 10px 0px;}
+
+.menu-item-has-children:hover .sub-menu{display: block;}
+
+.social-link {padding: 20px;}
+
+.social-link a{text-decoration: none; padding: 8px; color: rgba(255,255,255,1.00); font-size: 18px;} 
+
+.face{margin-left: 5px;}
+
+.social-link a:hover{text-decoration:none; color:rgba(215,228,84,1.00);}
+
+.header-text{text-align: center; color: rgba(255,255,255,1.00); padding: 230px 0;}
+
+.line{width:100%; border-top: 2px solid rgba(205,205,205,1.00); margin-top: 30px;}
+
+.menu-sidebar li > a {position: relative;}
+
+.menu-sidebar li > a::after {
+	content: "";
+	display: block;
+	height: 3px;;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	left: 50%;
+	transform: translate(-50%);
+	background-image: linear-gradient(to right, transparent 50.3%, rgba(255,255,255,1.00)50.3%);
+	transition: background-position .2s .1s ease-out;
+	background-size: 200% auto;
+}
+.menu-sidebar li > a:hover::after {background-position: -100% 0;}
+
+/* ==================================== */ 
+
+
+/* Navigation Menu - Màn hình dưới 1200px */
+/* ==================================== */ 
+
+@media only screen and (max-width:1200px){
+
+
+.menu{padding-left: 0px; text-align: center;}
+
+.menu li{float: none; }	
+
+.sub-menu{display:block; position:relative;}
+	
+	
+.menu-wrap {
+	background-color:rgba(255,255,255,1.00);
+	position: fixed;
+	top: 0; 
+	right: -280px;
+	height: 100%;
+	width: 280px;
+	margin-left: -280px;
+	font-size: 1em;
+	font-weight:bold;
+	overflow: auto;
+	transition: .25s;
+	z-index: 10;
+}
+.menu-show {
+	margin-right: 280px;
+	box-shadow: -5px 0px 15px rgba(41,41,41,1.00) ;
+}
+.menu-sidebar {
+	margin: 75px 0 80px 10px;
+	position: relative;
+	top: 20%;
+}
+.menu-sidebar li {
+	padding: 18px 22px 0;
+}
+.menu-sidebar li > a {
+	color: rgba(41,41,41,1.00);
+	font-size: 18px;
+	font-weight: bold;
+	position: relative;
+}
+.menu-sidebar li > a::after {
+	content: "";
+	display: block;
+	height: 0.15em;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	left: 50%;
+	transform: translate(-50%);
+	background-image: linear-gradient(to right, transparent 50.3%, rgba(41,41,41,1.00)50.3%);
+	transition: background-position .2s .1s ease-out;
+	background-size: 200% auto;
+}
+	
+.menu-sidebar li > a:hover::after {
+	background-position: -100% 0;
+}
+
+
+.menu-sidebar .menu-item-has-children .sub-menu {
+	display: none;
+}
+
+	
+.sidebar-menu-arrow::after {
+	content: "\f107";
+	font-family: 'FontAwesome';
+	padding: 10px;
+	color:rgba(41,41,41,1.00);
+	position: relative;
+}
+	
+.sidebar-menu-arrow:hover::after {
+	cursor: pointer;
+	color:rgba(41,41,41,1.00);
+}
+.sidebar-menu-arrow:active::after {
+	top: 2px;
+}
+	
+.social-link{margin-left:0px;}
+
+.social-link a{color: rgba(41,41,41,1.00);}	
+	
+.face{margin-left: 0px;}
+	
+/* ==================================== */ 
+
+	
+/* Hamburger Button - Màn hình dưới 1200px */
+/* ==================================== */ 
+
+.toggle-button {
+	position: fixed;
+	width: 44px;
+	height: 40px;
+	top: 30px;
+	right: 20px;
+	padding: 4px;
+	transition: .25s;
+	z-index: 15;
+}
+
+	
+.toggle-button .menu-bar {
+	position: absolute;
+	border-radius: 2px;
+	width: 80%;
+	transition: .5s;
+}
+.toggle-button .menu-bar-top {
+	border: 4px solid rgba(255,255,255,1.00);
+	border-bottom: none;
+	top: 0;
+}
+.toggle-button .menu-bar-middle {
+	height: 4px;
+	background-color: rgba(255,255,255,1.00);
+	margin-top: 7px;
+	margin-bottom: 7px;
+	top: 4px;
+}
+.toggle-button .menu-bar-bottom {
+	border: 4px solid rgba(255,255,255,1.00);
+	border-top: none;
+	top: 22px;
+}
+.button-open {
+	right: 20px;
+}
+.button-open .menu-bar-top {
+	border-color: rgba(41,41,41,1.00);
+	transform: rotate(45deg) translate(8px, 8px);
+	transition: .5s;
+}
+.button-open .menu-bar-middle {
+	background-color: rgba(41,41,41,1.00);
+	transform: translate(230px);
+	transition: .1s ease-in;
+	opacity: 0;
+}
+.button-open .menu-bar-bottom {
+	border-color: rgba(41,41,41,1.00);
+	transform: rotate(-45deg) translate(7px, -7px);
+	transition: .5s;
+}
+}
+
+/* Navigation Menu - Màn hình dưới 1200px */
+
+/* ==================================== */ 
+/* Hết phần Header */
+
+
+
+/* Footer */
+/* ==================================== */ 
+
+.footer{background-color: rgba(53,53,53,1.00); margin-top: 100px;}
+
+.social-page{
+	height:35px; width: 35px; border-radius: 50px; border: 2px solid rgba(255,255,255,1.00); 		float: left; margin-right: 10px; margin-top: 10px; 
+	padding-left: 8px; padding-top: 3px; margin-bottom: 20px;
+}
+
+@media only screen and (min-width:600px) and (max-width: 1199px){.social-page{margin-right: 5px;}}
+
+.social-footer{color: rgba(255,255,255,1.00);}
+
+.sub input{width: 70%; height: 45px; float: left; padding: 10px;}
+
+.submit-mail{width: 85px; height: 45px; background-color:rgba(201,201,201,1.00); }
+
+.logo-footer img{margin-top: 50px;}
+
+.logo-footer p{margin-top: 20px; color: rgba(255,255,255,1.00);}
+
+.social h5{color:rgba(255,255,255,1.00);}
+
+.intro{margin-top: 50px; color:rgba(255,255,255,1.00);}
+
+.address{color: rgba(255,255,255,1.00); margin-top: 50px;}
+
+/* ==================================== */ 
+/* Hết phần Footer */
+
+
+
+
+
+
+
+
+
